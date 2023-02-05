@@ -1,0 +1,519 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: auto;
+
+    box-sizing: border-box;
+    /*  font-family: "Ms Madi", cursive;*/
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-links li a {
+    font-family: "Roboto Condensed";
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 20px 20px;
+
+    transition: 0.4s all;
+}
+
+.navbar-links li.navbar-dropdown {
+    position: relative;
+}
+
+.navbar-links li.navbar-dropdown:hover .dropdown {
+    visibility: visible;
+    opacity: 0.8;
+    transform: translateY(0px);
+}
+
+.navbar-links li.navbar-dropdown .dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding: 20px 0;
+    top: 100%;
+    transform: translateY(50px);
+    left: 0;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    z-index: 111;
+    transition: 0.4s all;
+}
+.navbar-links li.navbar-dropdown .dropdown a {
+    font-family: "Roboto Condensed";
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar-dropdown .dropdown a:hover {
+    padding-left: 30px;
+}
+.navbar-links li a:hover {
+    color: #7549d4;
+}
+
+/*
+.banner {
+    width: 100%;
+    min-height: 100%;
+   background-image: url("bg-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.banner:before {
+    content: "";
+    position: absolute;
+    background: rgba(7, 1, 90, 0.6);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+*/
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 34px;
+}
+
+.row {
+    margin: 0 -5px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(62, 62, 236, 0.8);
+    padding: 15px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 30px;
+    height: 200px;
+    justify-content: space-around;
+    opacity: 1;
+}
+.row .column .card img {
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+.row .column .card h1 {
+    color: #0b126c;
+    font-family: "Roboto Condensed";
+    font-weight: 100px;
+    padding-top: 15px;
+}
+.row .column .card p {
+    font-size: 20px;
+    font-family: "Josefin Slab";
+    text-align: center;
+}
+
+/*
+.box p {
+    background-image: url("img7.png");
+    /* background-image: linear-gradient(to left, rgb(193, 176, 236), rgb(99, 56, 228));
+    background-position: 0%;
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    margin: 100px 400px 100px 300px;
+    font-family: "Rajdhani", sans-serif;
+    width: 1000px;
+    height: 300px;
+    padding: 80px 50px 50px 400px;
+    border-radius: 30px;
+    background-color: rgb(107, 69, 221);
+    border: 1px solid rgb(255, 255, 255);
+}*/
+.box {
+    width: min-content;
+}
+#myVideo {
+    box-shadow: 0 4px 8px 0 rgba(62, 62, 236, 0.8);
+
+    position: relative;
+    left: 300px;
+    right: 160px;
+
+    top: 200px;
+    bottom: 100px;
+    border-radius: 30px;
+    max-width: 1000px;
+    min-height: 400px;
+}
+
+.box .content1 h1 {
+    font-family: "Roboto Condensed";
+    position: relative;
+    font-size: 30px;
+    left: 350px;
+    font-weight: 600;
+    bottom: 150px;
+    padding-bottom: 10px;
+    color: #0b126c;
+}
+
+.box .content1 p {
+    position: relative;
+    font-weight: lighter;
+    font-size: 18px;
+    font-family: "Roboto Condensed";
+    left: 350px;
+    bottom: 150px;
+    color: #0b126c;
+}
+/*
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}*/
+
+/*
+.process {
+    font-family: "Courier New";
+    height: 300px;
+    width: 100%;
+    bottom: 10px;
+    background-image: linear-gradient(to left, rgb(134, 168, 216), rgb(86, 60, 234));
+}
+.linear {
+    display: flex;
+    width: 100%;
+}
+
+/*
+.process .linear .first p {
+    padding: 0px 300px 100px 10px;
+
+    font-size: 100px;
+}
+.process .linear .second p {
+    padding: 0px 300px 100px 0px;
+
+    font-size: 100px;
+}
+.process .linear .third p {
+    padding: 0px 0px 100px 0px;
+    font-size: 100px;
+}*/
+
+/*process*/
+
+/*image*/
+section {
+    height: calc(90% - 50px);
+    height: 90vh;
+}
+
+.banner {
+    height: 100vh;
+    min-height: 400px;
+    background-size: cover;
+    background-image: url("../images/front2.gif");
+}
+
+.affix {
+    background-color: #eee;
+    -webkit-transition: padding 0.2s ease-out;
+    -moz-transition: padding 0.2s ease-out;
+    -o-transition: padding 0.2s ease-out;
+    transition: padding 0.2s ease-out;
+}
+
+@media (min-width: 768px) {
+    .affix-top {
+        background-color: transparent;
+        border-color: transparent;
+        padding: 15px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    border-bottom: 1px solid rgba(235, 235, 235, 0.5);
+} /*
+nav .logo {
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}*/
+.img {
+    top: 10px;
+    width: 200px;
+    height: 60px;
+}
+
+.logo {
+    min-height: 10px;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+} /*
+nav ul li a {
+    color: rgb(3, 3, 59);
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: 0.3s;
+}
+nav ul li a:hover {
+    color: #7564e5;
+}*/
+
+.header.sticky {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    padding: 10px 80px;
+    top: 0;
+    transition: all 0.4s ease;
+    box-shadow: 0px 1px 15px rgb(0 0 0 / 10%);
+    z-index: 999;
+}
+.header.sticky .logo {
+    color: #7564e5;
+}
+.header.sticky ul li a {
+    color: #333;
+}
+.header.sticky ul li a:hover {
+    color: #7564e5;
+}
+/*
+.banner-text {
+    padding-top: 700px;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 200px;
+    color: #fff;
+}*/
+/*
+.first {
+    height: 100vh;
+    min-height: 400px;
+    background-size: cover;
+    background-image: url("bg-image.jpg");
+}
+
+.affix {
+    background-color: #eee;
+    -webkit-transition: padding 0.2s ease-out;
+    -moz-transition: padding 0.2s ease-out;
+    -o-transition: padding 0.2s ease-out;
+    transition: padding 0.2s ease-out;
+}
+
+@media (min-width: 768px) {
+    .affix-top {
+        background-color: transparent;
+        border-color: transparent;
+        padding: 15px;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+}
+*/
+/*reg form*/
+.link {
+    font-family: "Roboto Condensed";
+    margin: 100px 350px 100px 680px;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.modal__content {
+    box-sizing: border-box;
+    width: 75%;
+    height: 75%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    border-radius: 1em;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+#modal:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modal:target .modal__content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__close {
+    color: #363636;
+    font-size: 2em;
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+}
+.modal-open {
+    display: inline-block;
+    background-color: rgb(10, 28, 107); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 150px 100px 30px;
+}
+
+/*
+.modal__heading {
+    color: dodgerblue;
+    margin-bottom: 1em;
+}
+
+.modal__paragraph {
+    line-height: 1.5em;
+}*/
+/*
+* {
+    box-sizing: border-box;
+}
+
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: 
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: 
+.tab {
+    display: none;
+}
+
+button {
+    background-color: #731db9;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    right: 5px;
+    background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: 
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: 
+.step.finish {
+    background-color: #54139f;
+}
+*/
